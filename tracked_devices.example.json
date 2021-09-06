@@ -1,0 +1,20 @@
+{
+    "tracked_devices": [
+        {
+            "device": "FF-FF-FF-FF-FF-FF",
+            "name": "Bill"
+        },
+        {
+            "device": "FF-FF-FF-FF-FF-EE",
+            "name": "BOB"
+        },
+        {
+            "device": "FF-FF-FF-FF-FF-DD",
+            "name": "Katie"
+        },
+        {
+            "device": "FF-FF-FF-FF-FF-CC",
+            "name": "Kerry"
+        }
+    ]
+}

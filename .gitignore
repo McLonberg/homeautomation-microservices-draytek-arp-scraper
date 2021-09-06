@@ -1,0 +1,9 @@
+# Folders
+local/
+__pycache__/
+
+# Files
+config.py
+secrets.py
+*.pyc
+tracked_devices.json

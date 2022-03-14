@@ -7,3 +7,4 @@ config.py
 secrets.py
 *.pyc
 tracked_devices.json
+data.txt

@@ -3,7 +3,7 @@
 
 from config import *
 # You can overwrite things like HOST here if you want to ensure you don't store your details in a public repo.
-from secrets import *
+from secrets import * 
 import re
 import requests
 import urllib.request
@@ -15,6 +15,24 @@ import json
 import paho.mqtt.client as mqtt
 import time
 from bs4 import BeautifulSoup
+import pickle
+import sys
+import getopt
+
+## Validate command line arguments
+n = len(sys.argv)
+
+if n > 1:
+    print("\nArguments passed:", end = " ")
+    for i in range(1, n):
+        #print(sys.argv[i], end = " ")
+
+        if i == 'local':
+            print('local')
+
+exit()
+
+
 
 # Variables
 devices = []
@@ -156,8 +174,13 @@ if not parsed:
 
 data = eval('[' + parsed[2] + ']')
 length = len(data)
+#print(data)
+# Loop through and create our list¦
 
-# Loop through and create our list
+#Write output to local file:
+#with open('data.txt','wb') as f:
+#    pickle.dump(data,f)
+
 
 for x in range(length):
     if x == 0:
@@ -174,7 +197,7 @@ for x in range(length):
         host = "-"  # Not every entry in arp cache has a host name
     devices.append((ip, mac, host))
 
-#print(devices)
+print(devices)
 #exit()
 
 # CSV
